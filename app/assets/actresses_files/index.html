@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://cdn.flashtalking.com/64105/1524898/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style></style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="ad.size" content="width=160,height=600">
+		<title>SlingTV 728x090 | </title>
+		<link rel="stylesheet" type="text/css" href="./css-reset.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<script src="./TweenLite.min.js"></script>
+		<script src="./TimelineLite.min.js"></script>
+		<script src="./easepack.min.js"></script>
+		<script src="./cssplugin.min.js"></script>
+
+		<script src="./createjs-2015.11.26.min.js"></script>
+		<script src="./AdHelper.min.js"></script>
+		<script src="./728x090.js"></script>
+
+		<script>
+		var canvas, stage, exportRoot;
+		function initLoad() {
+
+			canvas = document.getElementById("canvas");
+			images = images||{};
+
+			var loader = new createjs.LoadQueue(false);
+			loader.addEventListener("fileload", handleFileLoad);
+			loader.addEventListener("complete", handleComplete);
+			loader.loadManifest(lib.properties.manifest);
+		}
+
+		function handleFileLoad(evt) {
+			if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+		}
+
+		function handleComplete(evt) {
+			exportRoot = new lib._728x090();
+			initVars();
+		}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="ad" style="cursor: pointer; background-image: url(&quot;about:blank&quot;);">
+
+			<canvas id="canvas" width="728" height="90" style="opacity: 1;"></canvas>
+			<div id="loading" style="cursor: pointer; opacity: 0;"></div>
+			<div id="border"></div>
+
+		</div><!-- ad -->
+
+		<script src="./anim.js"></script>
+		<script src="./html5API.js"></script>
+
+		<script type="text/javascript">
+			container = myFT.$("#ad");
+			myFT.applyClickTag(container, 1);
+		</script>
+
+		<script type="text/javascript">
+			myFT.on('ready', function(){
+				myFT.require(['anim.js'], function(){
+					initLoad();
+				});
+			});
+		</script>
+
+	
+</body></html>

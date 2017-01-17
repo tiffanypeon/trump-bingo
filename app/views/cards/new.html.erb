@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <h1> Create your own Trump Bingo game! </h1>
+  </div>
+
+  <%= form_for @card, url: {action: "create"} do |f| %>
+    <% 24.times do |n| %>
+      <input type="text" name="card[space_name][]">
+    <% end %>
+    <%= f.submit %>
+  <% end %>
+</div>

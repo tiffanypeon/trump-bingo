@@ -1,0 +1,2 @@
+class InsultedParty < ApplicationRecord
+end

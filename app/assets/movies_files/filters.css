@@ -1,0 +1,252 @@
+/*************************************************
+ * CSS styles for list filters.
+ */
+.panel-filters.filters {
+    display: none;
+}
+
+.filters .plot {
+    margin-bottom: 10px;
+    width: 98%!important;
+}
+
+.filters input[type='text'] {
+    width: 50px;
+}
+
+.filters .footer {
+    margin-top: 5px;
+}
+
+.filters .footer a {
+    white-space: nowrap;
+}
+
+.filters .footer .view-all {
+    display: inline;
+}
+
+.filters .permalink {
+    float: right;
+    padding-right: 20px;
+}
+
+.filters .clear-all {
+    cursor: pointer;
+    background-image:url("/images/rating/rating-big/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 50px -2px;
+    float: right;
+    padding-right: 20px;
+}
+.filters .clear-all:hover {
+    background-position: 50px -22px;
+    color: #136CB2;
+    text-decoration: underline;
+}
+
+.filters .clear-all-selections {
+    cursor: pointer;
+    background-image:url("/images/rating/rating-big/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0px -3px;
+    padding-right: 20px;
+}
+.filters .clear-all-selections:hover {
+    background-position: 0px -23px;
+    color: #136CB2;
+}
+
+.filters .accordion-content-styling {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    height:175px !important;
+    margin-bottom: 0px;
+    padding-left : 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+}
+
+.filters ul.filter-columns {
+    width: 252px;
+}
+
+.filters ul.filter-columns li {
+    float: left;
+    list-style: none;
+}
+
+.filters .collapsed {
+    height: 120px;
+    overflow: hidden;
+}
+
+.filters .genres .see-all {
+    color: #136CB2;
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.filters .add-border-bottom {
+    border-bottom: 1px dotted #CCCCCC;
+    display: -moz-inline-stack;
+    display: inline-block;
+}
+
+.disable-pane {
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    display: inline;
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    position: absolute;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.center-spinner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#accordion {
+    z-index: 1;
+}
+
+#accordion .accordion-header {
+    background-image: -moz-linear-gradient(center bottom , #EEEFEF 0%, #F7F7F8 80%);
+    background-image: -webkit-gradient(  linear,  left bottom,  left top,  color-stop(0, rgb(238,239,239)),  color-stop(0.8, rgb(247,247,248))  );
+    border: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 35px;
+    margin-top:0px;
+}
+#accordion .accordion-header.ui-state-active {
+    background-image: none;
+}
+#accordion .selections {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 20px;
+    padding-bottom: 2px;
+}
+
+#accordion .sub-selections {
+    float: right;
+    font-size: 90%;
+    margin-bottom: 5px;
+}
+
+#accordion .ruler-between-sliders hr {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+// The following styles override the defaults from the jQuery accordion library.
+.ui-accordion .ui-accordion-content-active {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    height:175px !important;
+    margin-bottom: 0px;
+    padding-left : 1px;
+    padding-right: 1px;
+}
+
+.ui-accordion .ui-accordion-content {
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ui-widget-content {
+    background:url("/images/css2/jquery-ui/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #FFFFFF;
+    border: none; //1px solid #AAAAAA;
+    color:#222222;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background:url("/images/css2/jquery-ui/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png") repeat-x scroll 50% 50% #FFFFFF;
+    border-left:0 solid #AAAAAA;
+    border-right:0 none;
+    border-top:1px solid #E9E9E9;
+} 
+
+.ui-accordion .ui-accordion-header a {
+    padding-left: 1.6em;
+    padding-top:0.3em;
+    padding-bottom:0.2em;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+    left: -0.1em;
+    margin-top: 0px;
+    top: .2em;
+}
+
+.tick.ui-widget-content {
+    border: none;
+    font-size: 11px;
+    margin-top: 2px;
+    position: absolute;
+    text-align: center;
+}
+.tick-marks.ui-widget-content {
+    border: none;
+    color: #F6F6F5;
+    margin-top: 4px;
+    position: absolute;
+    text-align: center;
+}
+
+span.filter-label {
+    display: inline;
+    font-family: 'Tahoma';
+    font-size: 13px;
+    margin-left: -5px;
+}
+
+span.facet-count {
+    font-family: 'Tahoma';
+    font-size: 13px;
+    color:#999999;
+    display: inline;
+}
+div.slider-label-tag {
+    float:left;
+}
+div.slider-label-info {
+    float:right;
+}
+.ui-slider {
+    margin-left: 4%;
+    width: 90%;
+}
+.histogram canvas {
+    height: 28px!important;
+    margin-left: 4%!important;
+    width: 90%!important;
+}
+.space-sliders {
+    clear: both;
+    margin-top: 20px;
+}
+/**************************************************/
+// Width is computed as follows. We desire 300px as
+// IMDb standard for RHS content. So
+// padding+border= 4px*2 + 1px*2 = 10px; 290+10==300.
+.aux-rhs-extension-panel {
+    border: 1px solid #ECECEC;
+    width: 290px;
+    height: 500px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 11px; 
+    padding: 4px;
+    margin-bottom: 7px;
+}

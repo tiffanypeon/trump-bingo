@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered">
+      <tr>
+        <% "BINGO".split("").each do |letter| %>
+          <th class="text-center"> <%= letter %></th>
+        <% end %>
+      </tr>
+      <% @card.rows.each_with_index do |row, i| %>
+        <tr>
+          <% row.each do |name| %>
+            <td class="text-center"> <%= name %> </td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

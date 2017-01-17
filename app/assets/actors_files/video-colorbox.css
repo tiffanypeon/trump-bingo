@@ -1,0 +1,9 @@
+/* Copyright (c) The Internet Movie Database, 2010 - manual rev:0.005 */.video-colorbox #cboxClose{background:url("/images/video/lightbox-asset-sprite.png") no-repeat 0 -3px;width:40px;height:30px;margin-top:-30px;}.video-colorbox #cboxClose:hover,
+.video-colorbox #cboxClose:active{background-position:0 -40px;}.video-colorbox #cboxContent{overflow:visible;background:#171717;box-shadow:0 0 8px #000;-moz-box-shadow:0 0 8px #000;-webkit-box-shadow:0 0 8px #000;}.video-colorbox #cboxTopLeft,
+.video-colorbox #cboxTopCenter,
+.video-colorbox #cboxTopRight,
+.video-colorbox #cboxMiddleLeft,
+.video-colorbox #cboxMiddleRight,
+.video-colorbox #cboxBottomLeft,
+.video-colorbox #cboxBottomCenter,
+.video-colorbox #cboxBottomRight{background:transparent;}.video-colorbox #cboxTopCenter{height:25px;}.video-colorbox #cboxLoadingGraphic{background:#000;}.video-colorbox #cboxLoadingOverlay{background:#000;}

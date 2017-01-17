@@ -1,0 +1,60 @@
+/*----- 728x90 ------*/
+
+/*--------- END EDITABLES ---------*/
+
+/*elements appear from left side - make left border*/
+/*.textOnPanel {
+	border-left: 50px solid #000;
+	left: -50px !important;
+}*/
+
+/*.sprite {
+	display: inline-block;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image:url(images/728x090_sprites_crushed.png);
+}*/
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; -webkit-touch-callout:none; -webkit-user-select:none; -webkit-text-size-adjust:none; }
+
+body { background-color: #fff; }
+
+#ad {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 728px;
+	height: 90px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #000;
+}
+
+#loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 728px;
+	height: 90px;
+	/*z-index: 1001;*/
+	opacity: 1;
+	background-image: url("sling_loader.gif");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: #000;
+}
+
+#border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 726px;
+	height: 88px;
+
+	pointer-events: none;
+	border: 1px solid #999;
+}

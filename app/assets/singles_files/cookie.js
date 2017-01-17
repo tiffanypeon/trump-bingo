@@ -1,0 +1,1 @@
+window.parent.googletag.impl.pubads.setCookieInfo({"_cookies_":[{"_value_":"ID=f978c34512e9103c:T=1484598331:S=ALNI_MbbVpzXa7ecmzzHeHlcu8w51EwEaQ","_expires_":1547670331,"_path_":"/","_domain_":"billboard.com"}]});

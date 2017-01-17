@@ -1,0 +1,28 @@
+OX_347182549({
+  "ads":{
+    "chain":1,
+    "medium":"w",
+    "record_tmpl":"http://us-ads.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=6&ph=94ef58655625200a8cfc5b15afcd0b94ad52d590",
+    "adunits" : [
+      {
+        "auid":"340802",
+        "chain_timeout":"",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "adv_acct_id":"",
+            "width":"300",
+            "height":"600",
+            "html":"<script src=\"https://www.googletagservices.com/tag/js/gpt.js\">    googletag.pubads().definePassback(\n    \"/6419/billboard/bb.adx\", [300, 600]).display();\n</script>\n",
+            "target":"_blank",
+            "ts":"1fHJpZD02ODIyNzc2ZC1kNjM5LTQxNjgtODc5My0yZjU3N2FiOTQ1MTZ8cnQ9MTQ4NDU5ODM0OHxhdWlkPTM0MDgwMnxhdW09RE1JRC5XRUJ8YXVwZj1kaXNwbGF5fHNpZD02MzY5NnxwdWI9Nzg0OTF8cGM9VVNEfHJhaWQ9NGViNjJhOWMtYjQwMS00OTk3LWIzMDktY2Y0MDg1NzYzNzYwfHJzPTF8bXdmPTB8dXI9dTBCQzBJSWNuZw",
+            "type":"html",
+            "ad_url":"<script src=\"https://www.googletagservices.com/tag/js/gpt.js\">    googletag.pubads().definePassback(\n    \"/6419/billboard/bb.adx\", [300, 600]).display();\n</script>\n"
+          }
+        ]
+      }
+    ]
+  }
+});
