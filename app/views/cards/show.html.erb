@@ -6,10 +6,14 @@
           <th class="text-center"> <%= letter %></th>
         <% end %>
       </tr>
-      <% @card.rows.each_with_index do |row, i| %>
+      <% @card.rows.each_with_index do |row, row_i| %>
         <tr>
-          <% row.each do |name| %>
-            <td class="text-center"> <%= name %> </td>
+          <% row.each_with_index do |name, i| %>
+            <% if row_i == 2 && i == 2 %>
+              <td class="text-center">FREE SPACE:<br /><a href="https://www.nytimes.com/interactive/2016/01/28/upshot/donald-trump-twitter-insults.html?_r=0" target="new"> <%= name %> </a></td>
+            <% else %>
+              <td class="text-center"> <%= name %> </td>
+            <% end %>
           <% end %>
         </tr>
       <% end %>

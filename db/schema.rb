@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170116201836) do
+ActiveRecord::Schema.define(version: 20170117184435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(version: 20170116201836) do
     t.text     "space_name", default: [],              array: true
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.text     "row1",       default: [],              array: true
+    t.text     "row2",       default: [],              array: true
+    t.text     "row3",       default: [],              array: true
+    t.text     "row4",       default: [],              array: true
+    t.text     "row5",       default: [],              array: true
   end
 
   create_table "insulted_parties", force: :cascade do |t|

@@ -7,7 +7,7 @@
 # NYT already insulted people
 # doc = File.open('app/assets/trump.html') { |f| Nokogiri::HTML(f) }
 # doc.css('div.g-entity-name').each do |entity|
-#   InsultedParty.create(name: entity.children.first.text)
+#   InsultedParty.create(name: entity.children.first.text, kind: 'freebie')
 # end
 
 # Top 100 movies
