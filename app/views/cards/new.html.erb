@@ -1,10 +1,18 @@
 <div class="row">
-  <h1> Create your own Trump Bingo game! </h1>
+  <div class="col">
+    <h1 class="text-center"> Create your own Trump Bingo game! </h1>
+  </div>
 </div>
-<%= form_for @card, url: {action: "create"} do |f| %>
-  <% Card::KINDS.each do |kind| %>
-    <label for=<%= kind %>> <%= kind.pluralize %> </label>
-    <input type="checkbox" name="card[space_name][]" value=<%= kind %>>
+<div class="row">
+  <%= form_for @card, url: {action: "create"}, html: {class: "form-check"} do |f| %>
+    <% Card::KINDS.each do |kind| %>
+      <div class="form-check">
+        <label class="form-check-label" for=<%= kind %>>
+          <input class="form-check-input" type="checkbox" name="card[space_name][]" value=<%= kind %>>
+          <%= kind.pluralize %>
+        </label>
+      </div>
+    <% end %>
+    <%= submit_tag "Create", class: "btn btn-primary" %>
   <% end %>
-  <%= f.submit %>
-<% end %>
+</div>
